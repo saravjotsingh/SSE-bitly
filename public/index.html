@@ -1,0 +1,15 @@
+<html>
+<head>
+  <script>
+    var source = new EventSource('/event')
+
+    source.addEventListener('message', function(e) {
+      alert("Data Saved in DB");
+    })
+
+  </script>
+</head>
+<body>
+  <h1>Alert Notification from server</h1>
+</body>
+</html>
